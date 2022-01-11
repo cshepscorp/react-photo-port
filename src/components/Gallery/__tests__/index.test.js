@@ -19,6 +19,7 @@ describe('Gallery is rendering', () => {
   })
 });
 
+// make sure that the title of our <h1> is Portraits
 it('renders', () => {
   const { getByTestId } = render(<Gallery currentCategory={portrait} />)
   expect(getByTestId('h1tag')).toHaveTextContent('Portraits')
