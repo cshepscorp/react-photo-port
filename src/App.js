@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from "./components/Gallery";
+import Gallery from './components/Gallery';
+import ContactForm from './components/Contact';
 
 // the way React uses JSX behind the scenes is very similar to document.createElement()
 function App() {
@@ -28,7 +29,8 @@ function App() {
       currentCategory={currentCategory}
       ></Nav>
       <main>
-      <Gallery currentCategory={currentCategory}></Gallery>
+        <ContactForm></ContactForm>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
         {/* Because components look just like any other JSX element (maybe colored slightly different by the syntax highlighter), using PascalCase can help you distinguish them from other JSX elements. */}
       </main>
